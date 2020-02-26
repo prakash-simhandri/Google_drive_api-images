@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Images Blog</title>
+  <meta charset="utf-8">
+  <link rel="icon" href="images/drive-icon.png">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="stylesheets/css/bootstrap.min.css">
+  <link rel="stylesheet" href="stylesheets/style.css">
+  <link href='http://fonts.googleapis.com/css?family=Oswald:400,300,700' rel='stylesheet' type='text/css'>
+  <link data-require="fontawesome@*" data-semver="4.5.0" rel="stylesheet"
+    href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.css" />
+
+
+</head>
+
+<body>
+
+  <nav class="navbar navbar-expand-md bg-dark navbar-dark">
+    <div class="navbar-text pull-left m_icon">
+      <a class="navbar-brand" href="#"><img id="brand-image" src="images/drive-icon.png" alt="logo"> Drive..</a>
+    </div>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="collapsibleNavbar">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item ">
+          <a class="nav-link" href="#">:)</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">hello</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Home</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+  <br>
+  <div class="container">
+    <div id="myslideshow" class="carousel slide carousel-fade" data-ride="carousel">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img
+            src="images/google_drive.jpg"
+            alt="Drive API" class="img-responsive image-resize img-thumbnail">
+          <div style="color: blue;" class="carousel-caption d-none d-md-block">
+            <h5>Wellcome</h5>
+          </div>
+        </div>
+        <% for(var i of data){ %>
+        <div class="carousel-item">
+          <img
+            src="<%=i.link%>"
+            alt="samantha" class="img-responsive image-resize img-thumbnail">
+          <div class="carousel-caption d-none d-md-block">
+            <h5>My Drive images...</h5>
+            <p>.....Google API......</p>
+          </div>￼
+        </div>
+        <%}%>
+      </div>
+      <a href="#myslideshow" class="carousel-control-prev" role="button" data-slide="prev">
+        <span class="carousel-control-prev-icon"></span>
+        <span class="sr-only">previous</span>
+      </a>
+      <a href="#myslideshow" class="carousel-control-next" role="button" data-slide="next">
+        <span class="carousel-control-next-icon"></span>
+        <span class="sr-only">Next</span>
+      </a>
+      <br>
+      <div class="text-center">
+        <i class="fa fa-spinner fa-pulse fa-2x fa-fw icon-a" aria-hidden="true"></i>
+      </div>
+
+
+      <!-- jquery First then bootstrap js -->
+      <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+        crossorigin="anonymous"></script>
+      <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+      <script src="stylesheets/js/bootstrap.min.js"></script>
+
+
+
+</body>
+
+</html>
