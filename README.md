@@ -31,6 +31,6 @@ https://nodejs.org/en/
 
 Open your Terminal, type following command to start your localhost server.
 ```
-node index.js
+node server.js
 ```
 # Happy Codeing :)
