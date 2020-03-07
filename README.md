@@ -33,4 +33,4 @@ Open your Terminal, type following command to start your localhost server.
 ```
 node index.js
 ```
-## Happy Codeing :)
+# Happy Codeing :)
